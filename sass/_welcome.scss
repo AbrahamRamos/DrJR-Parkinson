@@ -1,7 +1,14 @@
 .welcome{
-  img {
+  img{
+    margin-top: -4%;
     width: 100%;
-    margin: auto;
-    display: block;
+    position: absolute;
   }
+}
+.box_welcome{
+  width: 34%;
+  height:30%;
+  background: #A28977;
+  position: absolute;
+  margin: 7% 0 0;
 }
