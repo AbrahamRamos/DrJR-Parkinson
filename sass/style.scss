@@ -1,5 +1,8 @@
 
+  @import "fonts";
+  @import "grid";
   @import "svg";
+  @import "var";
   @import "welcome";
 
 
@@ -10,4 +13,29 @@
 }
 img {
     max-width: 100%;
+}
+.border{
+  padding: 0 70px 0;
+}
+//
+.txtWelcome{
+  font-family: AspiraLig;
+  position: absolute;
+  text-align: right;
+  font-size: 20pt;
+  margin: 116px 0 0 0%;
+  width: 87%;
+    .Cntro{
+      font-family: AspiraLig;
+      color: $gris_DRJR_100;
+    }
+    .Pkson{
+      color: $gris_DRJR_60;
+    }
+    .info{
+      font-family: AspiraLgItal;
+      margin: 300px 0 0 0;
+      font-size: 15pt;
+      text-align: left;
+    }
 }

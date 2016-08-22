@@ -1,0 +1,22 @@
+
+@mixin col($width,$margin,$media_query) {
+     @media screen and (min-width: $media_query){
+        float   : left;
+        display : inline-block;
+        width   : $width;
+        margin  : $margin;
+        overflow: auto;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.col2_ch {
+    @include col(48%,0 1%,0);
+}
+.colExt{
+  @include col(50%,0,0);
+}
