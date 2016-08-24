@@ -14,9 +14,6 @@
         }
     }
 }
-.col2_ch {
-    @include col(48%,0 1%,0);
-}
 .colExt{
   @include col(50%,0,0);
   height: 470px;

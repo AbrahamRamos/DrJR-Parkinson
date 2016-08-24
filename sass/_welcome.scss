@@ -1,4 +1,7 @@
 
+/*  Organizar las clases y ids, hacer carpeta si es necesaria para tener una mejor organizacion*/
+/*mover al Style las clases en comun como fonts,id y margen de la pagina y quiza clases de los grid*/
+
 .box_welcome{
   width: 350px;
   height:200px;
@@ -16,6 +19,11 @@
   width: 26%;
   margin: -21% 0 0;
   position: absolute;
+}
+#Contact{
+  width: 100%;
+  height: 33%;
+  margin-top: 50%;
 }
 #fontSub{
   width: 403px;
