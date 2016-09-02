@@ -1,64 +1,182 @@
 <!DOCTYPE html>
-<!--VERIFICAR EN FIRE, CHROME, SAFARI y Explorer-->
-<!-- Organizar los Div.... Borrar comentarios ("todos a pie de pagina")-->
-<!-- los fonst no funcionan o hay conflicto checarlo-->
-<!-- Preguntar a luz por titulos y el "Centro de Parkinson" a inicio de pagina-->
-<!-- HAY DEMASIADOS STYLE EN LOS ELEMENTOS, crear claes o id ( lo mejor ponerlo en el STYLE para GLOBALIZAR)-->
 
 <html>
   <head>
-    <title>DJR PARKINSON</title>
+    <title>PARKINSON</title>
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="fontawesomeanimation/font-awesome-animation.min.css">
+    <script src="js/slideUp.js" charset="utf-8"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDk9YJqQkJ4-FPQB9T7pfc90Hfe6JwQLRo'></script>
+        <script src="js/maps.js" charset="utf-8"></script>
+        <script src="js/main.js" charset="utf-8"></script>
+        <script src="js/contacto.js" charset="utf-8"></script>
   </head>
+
   <body>
-    <div class="welcome">
-      <div class="box_welcome">
-        <object id="hand" type="image/svg+xml" data="iconos/hands.svg"></object>
-      </div>
-      <div class="border txtWelcome">
-        <p><span class="Cntro">Centro de</span><br><span class="Pkson">Parkinson</span></p>
-        <p class="info" >Que es<br>Procedimientos<br>Contacto</p>
-      </div>
-      <img src="images/3era2.png" alt="">
-    </div>
-    <div class="welcome" style="height:470px;">
-      <div class="colExt">
-         <div class="lineVert">
-           <p class="Fontwhat">Que es</p>
-             <div id="fontSub">
-               <p>Las contribuciones vanguardistas de la bioteconología han permitido a los pacientes con temblor, akinesia-rigidez y otros tipos de movimientos anormales, tener calidad de vida, desarrollando sus actividades físicas de rutina y recreativas.</p>
-             </div>
-           </div>
-          <img src="images/marmol.png" al="" style="height:100%;"/>
-      </div>
-      <div class="colExt">
-        <img style="width:100%;" src="images/malla.png" alt="" />
-        <div class="boxWth">
-          <object id="Drjr_icon" type="image/svg+xml" data="iconos/Drjr.svg"></object>
+
+    <div class="herobanner parkinson-background">
+      <div class="Upbanner">
+        <div class="CajaMenu"> <!-- Alternativa de caja menu-->
+          <img id="icono" src="images/Parkinson/isotopo_parkinson_blanco.png" alt="">
+        </div>
+        <div style="width:25%; height: 191px;">
+          <p>¿Qué es?</p>
+          <p>Procedimientos</p>
+          <p>Contacto</p>
+        </div>
+        <img id="logoParkinson" src="images/Parkinson/logotipo_parkinson.png" alt="">
       </div>
     </div>
-  </div>
-  <div class="welcome">
-      <div>
-        <img id="cerb" src="images/cerebro.png" alt="" />
-        <div class="lineRight"><p class="Fontwhat" style="margin: -10px 0 0 23px;width: 227px;">Procedimientos</p></div>
-        <div id="Hrzt" class="Hrzontal"></div>
-          <div id="LgHand">
-            <object  type="image/svg+xml" data="iconos/hand-logo.svg"></object>
+
+    <div class="whatIs" id="SlideUp-What">
+      <div class="Grid2 Marmol-background">
+        <div class="MoveVrt" style="overflow: auto;display: flex;margin-top: 14%;">
+          <div id="LineWth" class="LineVrt transicion"></div>
+          <div id="text_T" class="ShowText"><p>¿Qué es?</P></div>
+        </div>
+        <div id="Shw">
+          <p>Las contribuciones vanguardistas de la bioteconología han permitido a los pacientes con temblor, akinesia-rigidez y otros tipos de movimientos anormales, tener calidad de vida, desarrollando sus actividades físicas de rutina y recreativas. </p>
+        </div>
+
+      </div>
+
+      <div class="Grid2 BoxNext">
+        <div style="width:100%; height:76px; margin:0;" class="Malla-background"></div>
+        <object id="lgoR" type="image/svg+xml" data="iconos/Drjr.svg"></object>
+      </div>
+    </div>
+
+    <div class="Proceso">
+      <div id="Proced" class="LineVrt moveProce"></div>
+      <div id="Pcedimientos" style="font-size: 5rem; margin: 1% 0 0 43%;"><p>Procedimientos</p></div>
+    </div>
+      <img id="crb" src="images/Parkinson/que_es_parkinson_2.png" alt="" style="display:flex;">
+
+
+    <!--Este es el Slide Up de Procedimientos!-->
+    <div class="MargenEstandar">
+      <div style="width:100%">
+        <div class="LineHrz" style="float: right;width: 93%;"></div>
+        <img src="images/Parkinson/isotipo_parkinson.png" alt="">
+
+        <div class="boxtext">
+          <p>Cirugía de parkinson y movimientos anormales<br></p>
+          <p>Colocación de electrodos cerebrales profundos<br></p>
+          <p>Distonia<br></p>
+          <p>Torticollis espasmodica<br></p>
+          <p>Temblor</p>
+        </div>
+      </div>
+    </div>
+    <div class="LineHrz" style="float: left;width: 90%;"></div>
+
+    <div class="Contacto">
+        <div class="ContactoView">
+          <div class="GridTwo">
+              <div id="BoxContacto" class="CajaMenu">
+                <div id="LineContacto"class="LineVrtW ContLM"></div>
+                <p>Contacto</p>
+              </div>
           </div>
+          <div class="GridTwo">
+            <img src="images/Parkinson/procedimientos_parkinson.png">
+          </div>
+        </div>
+
+        <!--Datos De contacto-->
+        <div>
+          <div class="GridTwo">
+
+          </div>
+        </div>
+
+    </div>
+
+    <!-- CONTACTO CENTROS-->
+    <div class="contacto">
+                    <form method="post" name="contact-form" id="contact-form">
+                        <ul>
+                            <li>
+                                <!--<label for="contact-name"> </label>-->
+                                <input class="color-formulario border-item" type="text" name="contact-responsible" placeholder="Nombre del responsable de este mensaje" required>
+                            </li>
+                            <li>
+                                <!--<label for="contact-name"> </label>-->
+                                <input class="color-formulario border-item" type="text" name="contact-name" placeholder="Nombre del paciente" required>
+                            </li>
+                            <li>
+                                <!-- <label for="contact-age">Edad/Antigüedad: </label> -->
+                                <input class="color-formulario border-item" type="number" name="contact-age" min="0" id="age" max="200" placeholder="Edad" required>
+                            </li>
+                            <li>
+                                <!-- <label for="contact-phone">Teléfono: </label> -->
+                                <input class="color-formulario border-item" type="tel" id="contact-phone" name="contact-phone" id="phone" placeholder="Teléfono " required>
+                            </li>
+                            <li>
+                                <!-- <label for="email-contact ">Correo electrónico: </label> -->
+                                <input class="color-formulario border-item" type="email " name="email-contact " placeholder="Correo Electrónico " required>
+                            </li>
+                            <li>
+                                <!--<label for="contact-name "> </label>-->
+                                <input class="color-formulario border-item" type="text " name="contact-subject " placeholder="Asunto " required>
+                            </li>
+                            <li>
+                                <!-- <label for="contact-description ">Descripción del asunto: </label> -->
+                                <textarea class="color-formulario border-item" name="contact-description " cols="50 " rows="6 " placeholder="Mensaje "></textarea>
+                            </li>
+                            <li>
+                                <button class="colorbutton" type="submit ">ENVIAR</button>
+                            </li>
+                        </ul>
+                    </form>
+                    <div class="address">
+                        <div class="banner_logo ">
+                            <object type="image/svg+xml" data="iconos/cerebro.svg"></object>
+                        </div>
+                        <p class="golden ">Torre Médica Providencia</p>
+                        <br>
+                        <p><strong>Pablo Neruda <i>#3265<br></i></strong> Segundo piso, Consultorio 28
+                            <br> Col. Providencia C.P. 44630
+                        </p>
+                        <span class="golden_medium ">
+              <i>Guadalajara, Jalisco</i></span>
+                        <p>juanmriestra@hotmail.com</p>
+                        <br>
+                        <div class="banner_logo_ocre ">
+                        </div>
+                        <p>Tel. &nbsp;<strong>33 3813 1360</strong>
+                            <br>
+                            <span class="golden reacomodo">Emergencias&nbsp;&nbsp;</span>(01) 33 3100 0260
+                        </p>
+                    </div>
+                    <div class="mapas">
+                        <div id='gmap_canvas'></div>
+                    </div>
+                    <span class="payments">Aceptamos Tarjetas de Crédito y de Débito de todos los bancos. A Meses sin Intereses.
+                        <div class="logo_cc">
+                        <img src="images/Logos/mastercard.png" />
+                        <img src="images/Logos/visa.png" style="vertical-align: 6px;margin-left: 20px;" />
+                        </div>
+                    </span>
+                </div>
+            </div>
+
+    <div class="footer">
+      <div id="footerIn"class="CajaMenu">
+        <div style="width: 17%;">
+          <img src="iconos/marmol_texture.png" alt="">
+          <object id="LgoFooter" type="image/svg+xml" data="iconos/Drjr.svg"></object>
+        </div>
+        <div>
+          <p>TODOS LOS DERECHOS RESERVADOS<br></p>
+          <p>DR. JUAN MANUEL RIESTRA 2016</p>
+        </div>
       </div>
-      <div id="shadow" class="welcome">
-        <div class="Hrzontal">
-        </div>
-        <div class="colExt">
-          <div id="Contact" class="boxWth"></div>
-        </div>
-        <div class="colExt">
-          <object style="width:100%" type="image/svg+xml" data="images/hands.png"></object>
-        </div>
-      </div>
-  </div>
-  <div>
-  </div>
+    </div>
+
+
   </body>
 </html>

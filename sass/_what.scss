@@ -1,0 +1,116 @@
+//Seccion de Que es? y de Procedimientos
+
+//¿Qué es?
+.whatIs{
+  max-width  : 1280px;
+  width      : 100%;
+  margin     : auto;
+  display    : flex;
+  overflow   : auto;
+  .Grid2{
+    width   : 50%;
+    float   : left;
+    display : inline-block;
+    margin  : 0;
+    overflow: auto;
+    height  : auto;
+    img{
+      width : 100%;
+
+    }
+
+    #lgoR{
+      width    : 14%;
+      margin: 18% 0 18% 48%;
+    }
+  }
+
+}
+.LineHrz{
+  width     : 100%;
+  height    : 7px;
+  display: flex;
+  background: $DarkBrown_Box;
+}
+.LineVrt{
+  width     : 7px;
+  height    : 84px;
+  background: $DarkBrown_Box;
+}
+#crb{
+  width     : 25%;
+  margin-top: -10%;
+}
+#Proced{
+  float: left;
+  margin: 12px 0 0 41%;
+  position: absolute;
+  &:hover .transicion{
+    animation-name: SlideVrtWhat;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+}
+#Pcedimientos{
+  font-size: 5rem;
+  margin: 1% 0 0 43%;
+  p{
+
+    margin: 0;
+    color: $lightText_Grey;
+  }
+}
+#text_T{
+  overflow: auto;
+  display: flex;
+  font-size: 5rem;
+  margin: -4px 0 0 20%;
+  color    : $lightText_Grey;
+  p{margin: 0;}
+}
+.MoveVrt{
+  &:hover .transicion{
+    animation-name: SlideVrtWhat;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  #LineWth{
+    float        : left;
+    margin-left  : 8%;
+    position: absolute;
+  }
+}
+.Proceso{
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  margin-top: 8%;
+  &:hover .moveProce{
+    animation-name: SlideVrtProce;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+}
+//Procedimientos
+.MargenEstandar{
+  max-width  : 1280px;
+  width      : 100%;
+  margin     : auto;
+  display    : flex;
+  overflow   : auto;
+  img{
+    margin: 7% 7% 7% 23%;
+    float: left;
+    display: flex;
+  }
+  .boxtext{
+    margin: 6% 0 0 65%;
+    p{display: list-item;}
+  }
+}
+#Shw{
+  margin: 12% 15% 32% 70px;
+  font-size: 1.2rem;
+  font-family: Aspira2;
+  color: $DarkText_Grey;
+}

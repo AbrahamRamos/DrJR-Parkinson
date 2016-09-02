@@ -1,186 +1,672 @@
-/*hacer reacomodo de las clases para continuar con las responsivas,
-  y trasladar los estilos de fonst*/
-@font-face {
-  font-family: AspiraLgItal;
-  src: url("fonts/Aspira-Light-Italic.otf");
-  font-weight: 300;
-  font-style: italic; }
-@font-face {
-  font-family: AspiraBoldItal;
-  src: url("fonts/Aspira-Bold-Italic.otf");
-  font-weight: 700;
-  font-style: italic; }
-@font-face {
-  font-family: AspiraBold;
-  src: url("fonts/Aspira-Bold.otf");
-  font-weight: 700;
-  font-style: normal; }
-@font-face {
-  font-family: AspiraItal;
-  src: url("fonts/Aspira-Italic.otf");
-  font-weight: 400;
-  font-style: italic; }
-@font-face {
-  font-family: AspiraRegular;
-  src: url("fonts/Aspira-Regular.otf");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: AspiraLig;
-  src: url("fonts/Aspira-Light.otf");
-  font-weight: 300;
-  font-style: normal; }
-@font-face {
-  font-family: BigMedium;
-  src: url("fonts/BigCaslonMedium.ttf");
-  font-weight: 400;
-  font-style: normal; }
-.colExt {
-  height: 470px; }
-  @media screen and (min-width: 0) {
-    .colExt {
-      float: left;
-      display: inline-block;
-      width: 50%;
-      margin: 0;
-      overflow: auto; }
-      .colExt:first-child {
-        margin-left: 0; }
-      .colExt:last-child {
-        margin-right: 0; } }
+.parkinson-background {
+  background-image: url("../images/Parkinson/Parkinson_alta_calidad.png"); }
 
-/* trasladar aqui los id y clases que llevan los iconos
-*/
-/*  Organizar las clases y ids, hacer carpeta si es necesaria para tener una mejor organizacion*/
-/*mover al Style las clases en comun como fonts,id y margen de la pagina y quiza clases de los grid*/
-.box_welcome {
+.Malla-background {
+  background-image: url("../iconos/Pattern.png"); }
+
+.Marmol-background {
+  background-image: url("../texturas/marmol_texture.png"); }
+
+.CajaMenu {
   width: 350px;
   height: 200px;
-  background: #a28977;
-  position: absolute;
-  margin: 70px 0 0; }
+  margin: 0 0 4%;
+  background: #786854; }
 
-.boxWth {
+.BoxNext {
   width: 100%;
-  height: 83%;
-  background: #c1b6a9;
-  display: grid; }
+  height: 100%;
+  background: #c9ba9c; }
 
-#cerb {
-  width: 26%;
-  margin: -21% 0 0;
-  position: absolute; }
-
-#Contact {
+@-webkit-keyframes SlideVrtWhat {
+  to {
+    margin-left: 438px; } }
+@-webkit-keyframes SlideVrtProce {
+  to {
+    margin: 12px 0 0 1000px; } }
+.Contacto {
+  max-width: 1280px;
   width: 100%;
-  height: 33%;
-  margin-top: 50%; }
+  margin: auto;
+  display: flex;
+  overflow: auto; }
+  .Contacto .ContactoView {
+    width: 100%;
+    display: flex; }
+    .Contacto .ContactoView .GridTwo {
+      width: 50%;
+      float: left;
+      margin: 0;
+      overflow: auto;
+      height: auto; }
+      .Contacto .ContactoView .GridTwo img {
+        width: 100%; }
+    .Contacto .ContactoView #BoxContacto {
+      width: 100%;
+      margin: 46% 0 0 0;
+      height: 176px;
+      display: flex; }
+      .Contacto .ContactoView #BoxContacto:hover .ContLM {
+        animation-name: SlideVrtWhat;
+        animation-duration: 1s;
+        animation-fill-mode: forwards; }
+      .Contacto .ContactoView #BoxContacto #LineContacto {
+        position: absolute;
+        margin-top: 4%;
+        margin-left: 6%; }
+      .Contacto .ContactoView #BoxContacto p {
+        margin: 0;
+        font-size: 5rem;
+        margin-top: 26%;
+        margin-left: 19%;
+        color: white; }
+  .Contacto .LineVrtW {
+    width: 7px;
+    height: 84px;
+    background: white; }
 
-#fontSub {
-  width: 403px;
-  margin-top: 138px;
-  font-size: 14pt; }
-
-#Hrzt {
+.footer {
+  max-width: 1280px;
   width: 100%;
-  height: 7px;
-  background: #a28977;
-  position: absolute;
-  margin-top: 8%; }
+  margin: auto;
+  display: flex;
+  overflow: auto; }
+  .footer #footerIn {
+    margin: 0;
+    width: 100%;
+    height: 116px;
+    padding-left: 70px;
+    overflow: auto;
+    display: flex; }
+    .footer #footerIn img {
+      width: 100%;
+      overflow: auto;
+      display: flex; }
+    .footer #footerIn object {
+      margin: -60% 0 0 27%;
+      display: flex;
+      width: 47%; }
+    .footer #footerIn p {
+      color: white; }
 
-.Hrzontal {
+.mapas {
+  width: 98%;
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 45px;
+  display: flex;
+  font-family: 'Aspira'; }
+  @media screen and (min-width: 769px) and (max-width: 800px) {
+    .mapas {
+      width: 88%; } }
+  .mapas #gmap_canvas,
+  .mapas .mapas_desc {
+    margin: 0 0 20px; }
+    .mapas #gmap_canvas p,
+    .mapas .mapas_desc p {
+      margin: 8px 0; }
+  .mapas #gmap_canvas {
+    width: 100%;
+    height: 500px; }
+    @media screen and (min-width: 769px) and (max-width: 800px) {
+      .mapas #gmap_canvas {
+        height: 300px; } }
+
+#contacto {
   width: 100%;
-  height: 7px;
-  background: #a28977;
-  position: absolute; }
+  position: relative;
+  clear: both; }
+  #contacto .banner img {
+    width: 100%; }
+  #contacto .banner p {
+    left: 10%;
+    bottom: 10%;
+    font-family: Caslon;
+    position: absolute;
+    /* display: inline-block; */
+    border-left: solid 5px #9e8629;
+    padding: 0 30px;
+    font-size: 7vw;
+    letter-spacing: 2px; }
+    @media screen and (max-width: 768px) {
+      #contacto .banner p {
+        bottom: 64%;
+        border-left-width: 0; } }
 
-.lineVert {
-  width: 7px;
-  height: 67px;
-  background: #a28977;
-  position: absolute;
-  margin: 8% 0 0 70px; }
-
-.lineRight {
-  width: 7px;
-  height: 67px;
-  background: #a28977;
-  margin: 10% 0 0 48%; }
-
-#LgHand {
-  position: absolute;
-  width: 8%;
-  margin: 13% 0 0 15%; }
-
-#Drjr_icon {
-  width: 20%;
-  margin: 94.35px 222px; }
-
-#hand {
-  margin: 4% 0 0 46%;
-  width: 45%; }
-
-#shadow {
+.address {
   width: 100%;
-  height: 470px;
-  margin-top: 27%;
-  position: absolute;
-  background: white; }
+  margin: 0;
+  text-align: right;
+  font-size: 1.5rem; }
+  @media screen and (min-width: 768px) {
+    .address {
+      margin: 40px 60px 0 0;
+      float: right;
+      width: 44%; } }
+  @media screen and (min-width: 769px) and (max-width: 800px) {
+    .address {
+      margin-right: 0;
+      font-size: 1.2rem; } }
+  @media screen and (max-width: 768px) {
+    .address {
+      line-height: 1.7; } }
+  .address i,
+  .address p {
+    margin: 10px 3%; }
+  .address .banner_logo {
+    height: 200px;
+    border-style: solid;
+    border-width: 0 0 3px 0;
+    width: 90%;
+    float: right;
+    margin-bottom: 30px;
+    border-color: #c9ba9c; }
+    @media screen and (min-width: 769px) and (max-width: 800px) {
+      .address .banner_logo {
+        height: 150px; } }
+    @media screen and (max-width: 768px) {
+      .address .banner_logo {
+        margin-top: 50px; } }
+    .address .banner_logo object {
+      width: 25%;
+      margin: auto;
+      display: block; }
+      @media screen and (max-width: 768px) {
+        .address .banner_logo object {
+          width: 40%; } }
+    @media screen and (max-width: 768px) {
+      .address .banner_logo {
+        height: 390px; } }
+  .address .banner_logo_ocre {
+    height: 20px;
+    border-style: solid;
+    border-width: 0 0 3px 0;
+    width: 13%;
+    display: inline-block;
+    border-color: #c9ba9c;
+    margin-right: 3%; }
+    @media screen and (max-width: 768px) {
+      .address .banner_logo_ocre {
+        height: 108px;
+        border-width: 0 0 5px 0; } }
+  .address .golden {
+    font-family: Caslon;
+    font-size: 2.1rem;
+    letter-spacing: 3px; }
+    @media screen and (min-width: 769px) and (max-width: 800px) {
+      .address .golden {
+        font-size: 1.1rem; } }
+  .address .golden_medium {
+    font-family: Aspira;
+    font-size: 20pt; }
+    @media screen and (min-width: 769px) and (max-width: 800px) {
+      .address .golden_medium {
+        font-size: 1.5rem; } }
+  @media screen and (max-width: 768px) {
+    .address .reacomodo {
+      margin-top: -24vw;
+      position: absolute; } }
+  @media screen and (max-width: 400px) {
+    .address .reacomodo {
+      margin-top: -43vw;
+      position: absolute; } }
 
-.Fontwhat {
-  font-family: 'BigMedium';
-  font-size: 60pt;
-  color: #98999b;
-  position: absolute;
-  margin: -10px 0 0 23px;
-  width: 227px; }
+.ubicacion {
+  width: 100%;
+  display: block;
+  margin: 0 0 70px;
+  overflow: auto; }
+
+.msg-left {
+  text-align: center; }
+
+p.italico {
+  font-style: italic; }
+
+.contacto {
+  width: 98%;
+  margin: 10px auto;
+  padding-bottom: 40px;
+  font-family: 'Aspira';
+  display: block;
+  vertical-align: top;
+  max-width: 1280px;
+  margin-top: 30px; }
+  @media screen and (min-width: 769px) and (max-width: 800px) {
+    .contacto {
+      padding-bottom: 30px; } }
+  .contacto ul {
+    list-style-type: none;
+    padding: 0; }
+  .contacto form {
+    float: left;
+    width: 94%;
+    margin: 0 3%; }
+    @media screen and (min-width: 768px) {
+      .contacto form {
+        margin: 0 0 0 70px;
+        width: 40%; } }
+  .contacto input,
+  .contacto textarea {
+    height: 50px; }
+    @media screen and (min-width: 769px) and (max-width: 800px) {
+      .contacto input,
+      .contacto textarea {
+        height: 40px; } }
+  .contacto textarea {
+    height: 250px; }
+    @media screen and (min-width: 769px) and (max-width: 800px) {
+      .contacto textarea {
+        height: 137px; } }
+  .contacto .contact-dropdown-services dt a {
+    text-transform: uppercase; }
+  .contacto .contact-dropdown-services dt a,
+  .contacto input,
+  .contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-bottom: none;
+    border-Top: none;
+    border-right: none;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: Aspira; }
+  .contacto input[type=date] {
+    width: 25%;
+    padding: 0; }
+  .contacto input[type=number] {
+    width: 23%;
+    float: left;
+    margin-right: 10px; }
+  .contacto input[type=tel] {
+    width: 74%;
+    float: left;
+    border-style: hidden; }
+    @media screen and (min-width: 769px) and (max-width: 800px) {
+      .contacto input[type=tel] {
+        width: 73%; } }
+    @media screen and (max-width: 768px) {
+      .contacto input[type=tel] {
+        width: 72%; } }
+  .contacto button {
+    cursor: pointer;
+    padding: 10px 20px;
+    float: right;
+    border: none;
+    color: white;
+    text-align: center;
+    height: 50px; }
+    @media screen and (max-width: 768px) {
+      .contacto button {
+        height: 56px;
+        width: 20%;
+        letter-spacing: 2px;
+        font-size: 2.5vw; } }
+  .contacto .label {
+    background-color: #FFFFFF;
+    font-size: 0.8em;
+    text-align: center; }
+  .contacto .sub-label {
+    text-align: center;
+    font-size: 0.6em; }
+  .contacto li > span {
+    font-size: 0.6em; }
+  .contacto *[placeholder],
+  .contacto [placeholder],
+  .contacto input[placeholder] {
+    word-spacing: 6px;
+    font-weight: 100;
+    font-size: 1rem;
+    font-family: Aspira;
+    font-style: normal;
+    font-variant: normal;
+    padding: 9px; }
+    @media screen and (min-width: 769px) and (max-width: 800px) {
+      .contacto *[placeholder],
+      .contacto [placeholder],
+      .contacto input[placeholder] {
+        font-size: 0.6rem; } }
+  .contacto [placeholder]:focus::-webkit-input-placeholder {
+    transition: 0s;
+    opacity: 0; }
+
+.contacto-fuente {
+  font-family: 'Aspira';
+  font-size: 2rem;
+  font-weight: 600; }
+
+#cerebro {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #98999b; }
+
+.payments {
+  text-align: center;
+  display: inline-block;
+  margin-top: 3%;
+  margin-left: 70px; }
+  @media screen and (min-width: 769px) and (max-width: 800px) {
+    .payments {
+      font-size: 10pt;
+      font-family: Aspira Regular; } }
+  @media screen and (max-width: 768px) {
+    .payments {
+      text-align: center;
+      margin-right: 70px;
+      margin-left: 70px;
+      letter-spacing: 1px; } }
+
+.logo_cc {
+  float: right;
+  margin-top: -18px;
+  margin-left: 210px; }
+  .logo_cc img {
+    max-width: 100px;
+    max-height: 50px; }
+    @media screen and (min-width: 769px) and (max-width: 800px) {
+      .logo_cc img {
+        max-width: 60px; } }
+  @media screen and (max-width: 768px) {
+    .logo_cc {
+      margin-top: 18px;
+      float: none;
+      margin-left: 0; } }
+
+.contacto ::-webkit-input-placeholder {
+  color: #000000; }
+.contacto :-moz-placeholder {
+  /* Firefox 18- */
+  color: #000000; }
+.contacto ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000000; }
+.contacto :-ms-input-placeholder {
+  color: #000000; }
+.contacto *[placeholder],
+.contacto [placeholder],
+.contacto input[placeholder] {
+  color: #000000; }
+
+.neurocirugia-button {
+  background: #96bd0e; }
+
+.neurocirugia-border-item {
+  border-left: solid 5px #96bd0e;
+  background: #E9E9EA; }
+
+.neurocirugia-texto {
+  color: #96bd0e; }
+
+.neurocirugia-border-color {
+  border-color: #96bd0e; }
+
+.neurocirugia-cerebro-fill svg {
+  fill: #98999b; }
+
+.color-formulario {
+  color: #403f41 !important;
+  background-color: #e9e9ea !important; }
+
+.border-item {
+  border-left: solid 5px #786854; }
+
+.colorbutton {
+  background: #786854; }
+
+@font-face {
+  font-family: AspiraBlackItalic;
+  src: url("fonts/Aspira Black Italic.otf");
+  font-weight: 800;
+  font-style: italic; }
+@font-face {
+  font-family: AspiraBlack;
+  src: url("fonts/Aspira Black.otf");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: Aspira;
+  src: url("fonts/Aspira Bold Italic.otf");
+  font-weight: 700;
+  font-style: italic; }
+@font-face {
+  font-family: Aspira;
+  src: url("fonts/Aspira Bold.otf");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: Aspira;
+  src: url("fonts/Aspira Demi Italic.otf");
+  font-weight: 600;
+  font-style: italic; }
+@font-face {
+  font-family: Aspira;
+  src: url("fonts/Aspira Demi.otf");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: Aspira;
+  src: url("fonts/Aspira Heavy.otf");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: Aspira;
+  src: url("fonts/Aspira Heavy Italic.otf");
+  font-weight: 600;
+  font-style: italic; }
+@font-face {
+  font-family: Aspira2;
+  src: url("fonts/Aspira Italic 2.otf");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: AspiraLightItalic;
+  src: url("fonts/Aspira Light Italic.otf");
+  font-weight: 300;
+  font-style: italic; }
+@font-face {
+  font-family: Aspira;
+  src: url("fonts/Aspira Light.otf");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: Aspira;
+  src: url("fonts/Aspira Medium Italic.otf");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: Aspira;
+  src: url("fonts/Aspira Medium.otf");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: AspiraRegular;
+  src: url("fonts/Aspira Regular.otf");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: BigCaslonM;
+  src: url("fonts/Big Caslon Medium.ttf");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: Aspira;
+  src: url("fonts/Aspira Light.otf");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: Aspira;
+  src: url("fonts/Aspira Thin.otf");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: Aspira;
+  src: url("fonts/Aspira Thin Italic.otf");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: Prototype;
+  src: url("fonts/Prototype.ttf");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: Prototype;
+  src: url("fonts/Prototype.ttf");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: Prototype;
+  src: url(fonts/); }
+div.herobanner {
+  background-position: center center;
+  background-size: cover;
+  background-color: white;
+  margin: auto;
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+  display: flex; }
+  div.herobanner div.Upbanner {
+    width: 100%;
+    height: 100%;
+    padding-top: 70px; }
+  div.herobanner img {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%; }
+  div.herobanner p {
+    margin-left: 70px;
+    font-size: 15pt;
+    color: #98999b;
+    font-family: AspiraLightItalic; }
+    div.herobanner p:hover {
+      margin: 0 0 -6px 70px;
+      font-size: 19pt;
+      color: grey; }
+  div.herobanner #icono {
+    width: 36%;
+    height: auto;
+    margin: 10% 14%;
+    float: right; }
+  div.herobanner #logoParkinson {
+    height: auto;
+    width: 20%;
+    float: right;
+    margin: -3% 70px 0; }
 
 .whatIs {
-  position: relative;
-  float: none;
-  max-width: 100%;
-  height: 473px; }
-  .whatIs img {
-    width: 100%;
-    display: block;
-    max-height: 1024px; }
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  overflow: auto; }
+  .whatIs .Grid2 {
+    width: 50%;
+    float: left;
+    display: inline-block;
+    margin: 0;
+    overflow: auto;
+    height: auto; }
+    .whatIs .Grid2 img {
+      width: 100%; }
+    .whatIs .Grid2 #lgoR {
+      width: 14%;
+      margin: 18% 0 18% 48%; }
 
-.welcome {
-  position: relative;
-  float: none;
-  max-width: 100%; }
-  .welcome img {
-    width: 100%;
-    display: block;
-    max-height: 1024px; }
+.LineHrz {
+  width: 100%;
+  height: 7px;
+  display: flex;
+  background: #786854; }
+
+.LineVrt {
+  width: 7px;
+  height: 84px;
+  background: #786854; }
+
+#crb {
+  width: 25%;
+  margin-top: -10%; }
+
+#Proced {
+  float: left;
+  margin: 12px 0 0 41%;
+  position: absolute; }
+  #Proced:hover .transicion {
+    animation-name: SlideVrtWhat;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; }
+
+#Pcedimientos {
+  font-size: 5rem;
+  margin: 1% 0 0 43%; }
+  #Pcedimientos p {
+    margin: 0;
+    color: #98999b; }
+
+#text_T {
+  overflow: auto;
+  display: flex;
+  font-size: 5rem;
+  margin: -4px 0 0 20%;
+  color: #98999b; }
+  #text_T p {
+    margin: 0; }
+
+.MoveVrt:hover .transicion {
+  animation-name: SlideVrtWhat;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+.MoveVrt #LineWth {
+  float: left;
+  margin-left: 8%;
+  position: absolute; }
+
+.Proceso {
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  margin-top: 8%; }
+  .Proceso:hover .moveProce {
+    animation-name: SlideVrtProce;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; }
+
+.MargenEstandar {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  overflow: auto; }
+  .MargenEstandar img {
+    margin: 7% 7% 7% 23%;
+    float: left;
+    display: flex; }
+  .MargenEstandar .boxtext {
+    margin: 6% 0 0 65%; }
+    .MargenEstandar .boxtext p {
+      display: list-item; }
+
+#Shw {
+  margin: 12% 15% 32% 70px;
+  font-size: 1.2rem;
+  font-family: Aspira2;
+  color: #3d4142; }
+
+html {
+  font-size: 16px; }
+
+* {
+  box-sizing: border-box; }
 
 body {
   margin: 0;
-  padding: 0;
-  font-size: 16px; }
+  height: 100%; }
 
-img {
-  max-width: 100%; }
+html {
+  height: 100%; }
 
-.border {
-  padding: 0 70px 0; }
-
-.txtWelcome {
-  font-family: 'AspiraLig';
-  position: absolute;
-  text-align: right;
-  font-size: 20pt;
-  margin: 116px 0 0 0%;
-  width: 87%; }
-  .txtWelcome .Cntro {
-    font-family: 'AspiraLig';
-    color: #98999b; }
-  .txtWelcome .Pkson {
-    color: #404142; }
-  .txtWelcome .info {
-    font-family: 'AspiraLgItal';
-    margin: 300px 0 0 0;
-    font-size: 15pt;
-    text-align: left; }
+.contenido {
+  margin: 0 70px; }
 
 /*# sourceMappingURL=style.css.map */
