@@ -25,9 +25,8 @@ div.herobanner{
     color: rgba(152,153,155,1);
     font-family: AspiraLightItalic;
     &:hover{
-      margin: 0 0 -6px 70px;
-      font-size:   19pt;
-      color: grey;
+      font-weight: bold;
+      color: $DarkBrown_Box;
     }
   }
   #icono{

@@ -126,7 +126,7 @@
     margin-left: 438px; } }
 @-webkit-keyframes SlideVrtProce {
   to {
-    margin: 12px 0 0 1000px; } }
+    margin: 12px 0 0 1055px; } }
 .Contacto {
   max-width: 1280px;
   width: 100%;
@@ -540,9 +540,8 @@ div.herobanner {
     color: #98999b;
     font-family: AspiraLightItalic; }
     div.herobanner p:hover {
-      margin: 0 0 -6px 70px;
-      font-size: 19pt;
-      color: grey; }
+      font-weight: bold;
+      color: #786854; }
   div.herobanner #icono {
     width: 36%;
     height: auto;
@@ -571,7 +570,7 @@ div.herobanner {
       width: 100%; }
     .whatIs .Grid2 #lgoR {
       width: 14%;
-      margin: 18% 0 18% 48%; }
+      margin: 18% 0 18% 46%; }
 
 .LineHrz {
   width: 100%;
@@ -590,22 +589,12 @@ div.herobanner {
 
 #Proced {
   float: left;
-  margin: 12px 0 0 41%;
+  margin: 12px 0 0 44%;
   position: absolute; }
   #Proced:hover .transicion {
-    /*animation-name: SlideVrtWhat;
+    animation-name: SlideVrtWhat;
     animation-duration: 1s;
-    animation-fill-mode: forwards;*/
-    transition: margin-left 438px;
-    -moz-transition: margin-left 438px;
-    /* Firefox */
-    -webkit-transform: margin-left 438px;
-    /* Chrome - Safari */
-    -o-transition: margin-left 438px;
-    /* Opera */
-    -ms-transform: margin-left 438px;
-    /* IE9 */
-    transition: ease 1s; }
+    animation-fill-mode: forwards; }
 
 #Pcedimientos {
   font-size: 5rem;
@@ -614,19 +603,20 @@ div.herobanner {
     margin: 0;
     color: #98999b; }
 
-#text_T {
+.text_T {
   overflow: auto;
   display: flex;
   font-size: 5rem;
   margin: -4px 0 0 20%;
-  color: #98999b; }
-  #text_T p {
+  color: #98999b;
+  font-family: Big Caslon; }
+  .text_T:hover .transicion {
+    animation-name: SlideVrtWhat;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; }
+  .text_T p {
     margin: 0; }
 
-.MoveVrt:hover .transicion {
-  animation-name: SlideVrtWhat;
-  animation-duration: 1s;
-  animation-fill-mode: forwards; }
 .MoveVrt #LineWth {
   float: left;
   margin-left: 8%;
@@ -647,21 +637,34 @@ div.herobanner {
   width: 100%;
   margin: auto;
   display: flex;
-  overflow: auto; }
+  overflow: auto;
+  display: none; }
   .MargenEstandar img {
     margin: 7% 7% 7% 23%;
     float: left;
     display: flex; }
   .MargenEstandar .boxtext {
-    margin: 6% 0 0 65%; }
+    margin: -20.5% 0 0 65%;
+    display: inline-block;
+    float: left; }
     .MargenEstandar .boxtext p {
       display: list-item; }
 
 #Shw {
+  display: none;
   margin: 12% 15% 32% 70px;
   font-size: 1.2rem;
   font-family: Aspira2;
   color: #3d4142; }
+  #Shw p {
+    margin: 0; }
+
+.CerebroRes {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  overflow: auto; }
 
 html {
   font-size: 16px; }

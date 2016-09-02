@@ -8,11 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="fontawesomeanimation/font-awesome-animation.min.css">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
     <script src="js/slideUp.js" charset="utf-8"></script>
     <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDk9YJqQkJ4-FPQB9T7pfc90Hfe6JwQLRo'></script>
         <script src="js/maps.js" charset="utf-8"></script>
         <script src="js/main.js" charset="utf-8"></script>
         <script src="js/contacto.js" charset="utf-8"></script>
+
   </head>
 
   <body>
@@ -33,11 +35,11 @@
 
     <div class="whatIs" id="SlideUp-What">
       <div class="Grid2 Marmol-background">
-        <div class="MoveVrt" style="overflow: auto;display: flex;margin-top: 14%;" onclick="slide_section('Shw');">
+        <div class="MoveVrt" style="overflow: auto;display: flex;margin-top: 14%" >
           <div id="LineWth" class="LineVrt transicion"></div>
-          <div id="text_T" class="ShowText"><p>¿Qué es?</P></div>
+          <div class="text_T"><p onclick="SlideWhatIs('Shw');">¿Qué es?</P></div>
         </div>
-        <div id="Shw" style="display:none">
+        <div id="Shw" >
           <p>Las contribuciones vanguardistas de la bioteconología han permitido a los pacientes con temblor, akinesia-rigidez y otros tipos de movimientos anormales, tener calidad de vida, desarrollando sus actividades físicas de rutina y recreativas. </p>
         </div>
 
@@ -45,19 +47,22 @@
 
       <div class="Grid2 BoxNext">
         <div style="width:100%; height:76px; margin:0;" class="Malla-background"></div>
+        <div id="Shw" style="display:none; margin: 9%;"></div>
         <object id="lgoR" type="image/svg+xml" data="iconos/Drjr.svg"></object>
       </div>
     </div>
 
     <div class="Proceso">
       <div id="Proced" class="LineVrt moveProce"></div>
-      <div id="Pcedimientos" style="font-size: 5rem; margin: 1% 0 0 43%;"><p>Procedimientos</p></div>
+      <div id="Pcedimientos" style="font-size: 5rem; margin-left:46%; font-family:Big Caslon;"><p onclick="SlideWhatIs('ProcesoSlide');">Procedimientos</p></div>
     </div>
+    <div class="CerebroRes" style="margin-top:-9%;">
       <img id="crb" src="images/Parkinson/que_es_parkinson_2.png" alt="" style="display:flex;">
+    </div>
 
 
     <!--Este es el Slide Up de Procedimientos!-->
-    <div class="MargenEstandar">
+    <div id="ProcesoSlide" class="MargenEstandar">
       <div style="width:100%">
         <div class="LineHrz" style="float: right;width: 93%;"></div>
         <img src="images/Parkinson/isotipo_parkinson.png" alt="">
@@ -71,8 +76,9 @@
         </div>
       </div>
     </div>
-    <div class="LineHrz" style="float: left;width: 90%;"></div>
-
+    <div class="CerebroRes">
+      <div class="LineHrz" style="float: left;width: 90%;"></div>
+    </div>
     <div class="Contacto">
         <div class="ContactoView">
           <div class="GridTwo">
