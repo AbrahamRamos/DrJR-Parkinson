@@ -46,9 +46,15 @@
   margin: 12px 0 0 41%;
   position: absolute;
   &:hover .transicion{
-    animation-name: SlideVrtWhat;
+    /*animation-name: SlideVrtWhat;
     animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards;*/
+    transition        : margin-left 438px;
+    -moz-transition   : margin-left 438px; /* Firefox */
+    -webkit-transform : margin-left 438px; /* Chrome - Safari */
+    -o-transition     : margin-left 438px; /* Opera */
+    -ms-transform     : margin-left 438px; /* IE9 */
+    transition        :ease 1s;
   }
 }
 #Pcedimientos{
