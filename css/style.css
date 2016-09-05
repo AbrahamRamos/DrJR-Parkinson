@@ -126,7 +126,7 @@
     margin-left: 438px; } }
 @-webkit-keyframes SlideVrtProce {
   to {
-    margin: 12px 0 0 1055px; } }
+    margin: 12px 0 0 86%; } }
 .Contacto {
   max-width: 1280px;
   width: 100%;
@@ -149,14 +149,19 @@
       margin: 46% 0 0 0;
       height: 176px;
       display: flex; }
-      .Contacto .ContactoView #BoxContacto:hover .ContLM {
-        animation-name: SlideVrtWhat;
-        animation-duration: 1s;
-        animation-fill-mode: forwards; }
+      @media screen and (max-width: 1920px) {
+        .Contacto .ContactoView #BoxContacto {
+          margin: 51% 0 0 0; } }
+      @media screen and (max-width: 1280px) {
+        .Contacto .ContactoView #BoxContacto {
+          margin: 46% 0 0 0; } }
       .Contacto .ContactoView #BoxContacto #LineContacto {
         position: absolute;
         margin-top: 4%;
         margin-left: 6%; }
+        @media screen and (max-width: 1920px) {
+          .Contacto .ContactoView #BoxContacto #LineContacto {
+            margin-top: 2%; } }
       .Contacto .ContactoView #BoxContacto p {
         margin: 0;
         font-size: 5rem;
@@ -184,13 +189,27 @@
     .footer #footerIn img {
       width: 100%;
       overflow: auto;
-      display: flex; }
-    .footer #footerIn object {
-      margin: -60% 0 0 27%;
       display: flex;
-      width: 47%; }
+      height: 100%; }
+    .footer #footerIn object {
+      margin: -51% 0 0 32%;
+      display: flex;
+      width: 35%; }
     .footer #footerIn p {
       color: white; }
+
+#Text_Footer {
+  margin-left: 51px; }
+  #Text_Footer p {
+    font-family: AspiraRegular;
+    margin: 10% 0 0;
+    font-size: .9rem; }
+  #Text_Footer a {
+    font-family: Big Caslon Medium;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 100;
+    sletter-spacing: 1.4px; }
 
 #contacto {
   width: 100%;
@@ -272,13 +291,15 @@
   .address .golden {
     font-family: Caslon;
     font-size: 2.1rem;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    color: #786854; }
     @media screen and (min-width: 769px) and (max-width: 800px) {
       .address .golden {
         font-size: 1.1rem; } }
   .address .golden_medium {
     font-family: Aspira;
-    font-size: 20pt; }
+    font-size: 20pt;
+    color: #786854; }
     @media screen and (min-width: 769px) and (max-width: 800px) {
       .address .golden_medium {
         font-size: 1.5rem; } }
@@ -535,11 +556,13 @@ div.herobanner {
     width: 100%;
     height: 100%; }
   div.herobanner p {
+    text-decoration: none;
     margin-left: 70px;
     font-size: 15pt;
     color: #98999b;
     font-family: AspiraLightItalic; }
     div.herobanner p:hover {
+      text-decoration: none;
       font-weight: bold;
       color: #786854; }
   div.herobanner #icono {
@@ -551,7 +574,15 @@ div.herobanner {
     height: auto;
     width: 20%;
     float: right;
-    margin: -3% 70px 0; }
+    margin: -22px 70px 0;
+    float: right;
+    margin: 0 60px 0 0; }
+    @media screen and (max-height: 1920px) {
+      div.herobanner #logoParkinson {
+        margin: 20% 60px 0 0; } }
+    @media screen and (max-width: 1280px) {
+      div.herobanner #logoParkinson {
+        margin: -4% 60px 0 0; } }
 
 .whatIs {
   max-width: 1280px;
@@ -584,16 +615,15 @@ div.herobanner {
   background: #786854; }
 
 #crb {
-  width: 25%;
-  margin-top: -10%; }
+  width: 28%; }
 
 #Proced {
   float: left;
-  margin: 12px 0 0 44%;
+  margin: 12px 0 0 40%;
   position: absolute; }
   #Proced:hover .transicion {
     animation-name: SlideVrtWhat;
-    animation-duration: 1s;
+    animation-duration: .7s;
     animation-fill-mode: forwards; }
 
 #Pcedimientos {
@@ -610,17 +640,20 @@ div.herobanner {
   margin: -4px 0 0 20%;
   color: #98999b;
   font-family: Big Caslon; }
-  .text_T:hover .transicion {
-    animation-name: SlideVrtWhat;
-    animation-duration: 1s;
-    animation-fill-mode: forwards; }
   .text_T p {
     margin: 0; }
 
+.MoveVrt:hover .transicion {
+  animation-name: SlideVrtWhat;
+  animation-duration: .7s;
+  animation-fill-mode: forwards; }
 .MoveVrt #LineWth {
   float: left;
   margin-left: 8%;
   position: absolute; }
+  @media screen and (max-width: 1920px) {
+    .MoveVrt #LineWth {
+      margin-left: 5.4%; } }
 
 .Proceso {
   position: absolute;
@@ -629,7 +662,7 @@ div.herobanner {
   margin-top: 8%; }
   .Proceso:hover .moveProce {
     animation-name: SlideVrtProce;
-    animation-duration: 1s;
+    animation-duration: .7s;
     animation-fill-mode: forwards; }
 
 .MargenEstandar {
@@ -644,20 +677,35 @@ div.herobanner {
     float: left;
     display: flex; }
   .MargenEstandar .boxtext {
-    margin: -20.5% 0 0 65%;
+    margin: -21.3% 0 0 65%;
     display: inline-block;
     float: left; }
     .MargenEstandar .boxtext p {
-      display: list-item; }
+      display: list-item;
+      font-family: AspiraRegular; }
+    @media screen and (max-width: 1920px) {
+      .MargenEstandar .boxtext {
+        margin: -19.3% 0 0 65%; } }
+    @media screen and (max-width: 1280px) {
+      .MargenEstandar .boxtext {
+        margin: -21.3% 0 0 65%; } }
 
-#Shw {
+.Shw-format {
   display: none;
-  margin: 12% 15% 32% 70px;
+  margin: 12% 15% 40% 70px;
   font-size: 1.2rem;
   font-family: Aspira2;
   color: #3d4142; }
-  #Shw p {
+  .Shw-format p {
     margin: 0; }
+  @media screen and (max-width: 1920px) {
+    .Shw-format {
+      margin: 12% 15% 47% 70px;
+      font-size: 1.4rem; } }
+  @media screen and (max-width: 1280px) {
+    .Shw-format {
+      margin: 12% 15% 40% 70px;
+      font-size: 1.2rem; } }
 
 .CerebroRes {
   max-width: 1280px;
@@ -665,6 +713,10 @@ div.herobanner {
   margin: auto;
   display: flex;
   overflow: auto; }
+
+.Logo-Show {
+  margin-top: 20%;
+  display: none; }
 
 html {
   font-size: 16px; }

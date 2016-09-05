@@ -38,16 +38,15 @@
   background: $DarkBrown_Box;
 }
 #crb{
-  width     : 25%;
-  margin-top: -10%;
+  width     : 28%;
 }
 #Proced{
   float: left;
-  margin: 12px 0 0 44%;
+  margin: 12px 0 0 40%;
   position: absolute;
   &:hover .transicion{
     animation-name: SlideVrtWhat;
-    animation-duration: 1s;
+    animation-duration: .7s;
     animation-fill-mode: forwards;
   }
 }
@@ -61,25 +60,27 @@
   }
 }
 .text_T{
-  &:hover .transicion{
-    animation-name: SlideVrtWhat;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
   overflow: auto;
   display: flex;
   font-size: 5rem;
   margin: -4px 0 0 20%;
   color    : $lightText_Grey;
   font-family: Big Caslon;
-  p{
-    margin: 0;}
+  p{margin: 0;}
 }
 .MoveVrt{
+  &:hover .transicion{
+    animation-name: SlideVrtWhat;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+  }
   #LineWth{
     float        : left;
     margin-left  : 8%;
     position: absolute;
+    @media screen and(max-width: 1920px){
+      margin-left: 5.4%;
+    }
   }
 }
 .Proceso{
@@ -89,7 +90,7 @@
   margin-top: 8%;
   &:hover .moveProce{
     animation-name: SlideVrtProce;
-    animation-duration: 1s;
+    animation-duration: .7s;
     animation-fill-mode: forwards;
   }
 }
@@ -106,20 +107,37 @@
     display: flex;
   }
   .boxtext{
-    margin: -20.5% 0 0 65%;
+    margin: -21.3% 0 0 65%;
     display: inline-block;
     float: left;
-    p{display: list-item;}
+    p{
+      display: list-item;
+      font-family: AspiraRegular;
+    }
+    @media screen and(max-width: 1920px){
+      margin: -19.3% 0 0 65%;
+    }
+    @media screen and (max-width: 1280px){
+      margin: -21.3% 0 0 65%;
+    }
   }
   display: none;
 }
-#Shw{
+.Shw-format{
   display: none;
-  margin: 12% 15% 32% 70px;
+  margin: 12% 15% 40% 70px;
   font-size: 1.2rem;
   font-family: Aspira2;
   color: $DarkText_Grey;
   p{margin: 0;}
+  @media screen and (max-width: 1920px){
+    margin: 12% 15% 47% 70px;
+    font-size: 1.4rem;
+  }
+  @media screen and (max-width: 1280px){
+    margin: 12% 15% 40% 70px;
+    font-size: 1.2rem;
+  }
 }
 .CerebroRes{
   max-width  : 1280px;
@@ -127,4 +145,8 @@
   margin     : auto;
   display    : flex;
   overflow   : auto;
+}
+.Logo-Show{
+  margin-top:20%;
+  display:none;
 }

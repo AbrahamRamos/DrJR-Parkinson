@@ -20,11 +20,13 @@ div.herobanner{
     height: 100%;
   }
   p{
+    text-decoration: none;
     margin-left: 70px;
     font-size: 15pt;
     color: rgba(152,153,155,1);
     font-family: AspiraLightItalic;
     &:hover{
+      text-decoration: none;
       font-weight: bold;
       color: $DarkBrown_Box;
     }
@@ -39,6 +41,14 @@ div.herobanner{
     height: auto;
     width: 20%;
     float: right;
-    margin: -3% 70px 0;
+    margin: -22px 70px 0;
+    float: right;
+    margin: 0 60px 0 0;
+    @media screen and (max-height: 1920px){
+      margin: 20% 60px 0 0;
+    }
+    @media screen and (max-width: 1280px){
+      margin: -4% 60px 0 0;
+    }
   }
 }

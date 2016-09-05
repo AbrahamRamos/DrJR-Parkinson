@@ -24,39 +24,42 @@
         <div class="CajaMenu"> <!-- Alternativa de caja menu-->
           <img id="icono" src="images/Parkinson/isotopo_parkinson_blanco.png" alt="">
         </div>
-        <div style="width:25%; height: 191px;">
-          <p>¿Qué es?</p>
-          <p>Procedimientos</p>
-          <p>Contacto</p>
+        <div style="width:25%;">
+          <a href="#WhtIs" style="text-decoration:none;"><p>¿Qué es?</p></a>
+          <a href="#LnkProce" style="text-decoration:none;"><p>Procedimientos</p></a>
+          <a href="#LinkContact" style="text-decoration:none;"><p>Contacto</p></a>
         </div>
         <img id="logoParkinson" src="images/Parkinson/logotipo_parkinson.png" alt="">
       </div>
+      <div>
+      </div>
     </div>
 
-    <div class="whatIs" id="SlideUp-What">
+    <div class="whatIs" id="WhtIs">
       <div class="Grid2 Marmol-background">
         <div class="MoveVrt" style="overflow: auto;display: flex;margin-top: 14%" >
           <div id="LineWth" class="LineVrt transicion"></div>
-          <div class="text_T"><p onclick="SlideWhatIs('Shw');">¿Qué es?</P></div>
+          <div class="text_T"><p onclick="SlideWhatIs('Shw'); SlideWhatIs('ShwBox');">¿Qué es?</P></div>
         </div>
-        <div id="Shw" >
+        <div id="Shw" class="Shw-format">
           <p>Las contribuciones vanguardistas de la bioteconología han permitido a los pacientes con temblor, akinesia-rigidez y otros tipos de movimientos anormales, tener calidad de vida, desarrollando sus actividades físicas de rutina y recreativas. </p>
+          <hr style="margin-top: 15%;width: 16%;float: left;size: 3px;" size="5px" color="grey">
         </div>
 
       </div>
 
       <div class="Grid2 BoxNext">
         <div style="width:100%; height:76px; margin:0;" class="Malla-background"></div>
-        <div id="Shw" style="display:none; margin: 9%;"></div>
+        <div id="ShwBox" class="Logo-Show"></div>
         <object id="lgoR" type="image/svg+xml" data="iconos/Drjr.svg"></object>
       </div>
     </div>
 
     <div class="Proceso">
       <div id="Proced" class="LineVrt moveProce"></div>
-      <div id="Pcedimientos" style="font-size: 5rem; margin-left:46%; font-family:Big Caslon;"><p onclick="SlideWhatIs('ProcesoSlide');">Procedimientos</p></div>
+      <div id="Pcedimientos" style="font-size: 5rem; margin-left:42%; font-family:Big Caslon;"><p onclick="SlideWhatIs('ProcesoSlide');">Procedimientos</p></div>
     </div>
-    <div class="CerebroRes" style="margin-top:-9%;">
+    <div id="LnkProce" class="CerebroRes" style="margin-top:-12%;">
       <img id="crb" src="images/Parkinson/que_es_parkinson_2.png" alt="" style="display:flex;">
     </div>
 
@@ -64,26 +67,26 @@
     <!--Este es el Slide Up de Procedimientos!-->
     <div id="ProcesoSlide" class="MargenEstandar">
       <div style="width:100%">
-        <div class="LineHrz" style="float: right;width: 93%;"></div>
+        <div class="LineHrz"></div>
         <img src="images/Parkinson/isotipo_parkinson.png" alt="">
 
         <div class="boxtext">
-          <p>Cirugía de parkinson y movimientos anormales<br></p>
-          <p>Colocación de electrodos cerebrales profundos<br></p>
-          <p>Distonia<br></p>
-          <p>Torticollis espasmodica<br></p>
-          <p>Temblor</p>
+          <li>Cirugía de parkinson y movimientos anormales<br></li>
+          <li>Colocación de electrodos cerebrales profundos<br></li>
+          <li>Distonia<br></li>
+          <li>Torticollis espasmodica<br></li>
+          <li>Temblor</li>
         </div>
       </div>
     </div>
     <div class="CerebroRes">
-      <div class="LineHrz" style="float: left;width: 90%;"></div>
+      <div class="LineHrz"></div>
     </div>
-    <div class="Contacto">
+    <div id="LinkContact" class="Contacto">
         <div class="ContactoView">
           <div class="GridTwo">
               <div id="BoxContacto" class="CajaMenu">
-                <div id="LineContacto"class="LineVrtW ContLM"></div>
+                <div id="LineContacto"class="LineVrtW"></div>
                 <p>Contacto</p>
               </div>
           </div>
@@ -142,13 +145,13 @@
                         <div class="banner_logo ">
                             <object type="image/svg+xml" data="iconos/cerebro.svg"></object>
                         </div>
-                        <p class="golden ">Torre Médica Providencia</p>
+                        <p class="golden">Torre Médica Providencia</p>
                         <br>
                         <p><strong>Pablo Neruda <i>#3265<br></i></strong> Segundo piso, Consultorio 28
                             <br> Col. Providencia C.P. 44630
                         </p>
                         <span class="golden_medium ">
-              <i>Guadalajara, Jalisco</i></span>
+                          <i style="color:$DarkBrown_Box;">Guadalajara, Jalisco</i></span>
                         <p>juanmriestra@hotmail.com</p>
                         <br>
                         <div class="banner_logo_ocre ">
@@ -176,9 +179,9 @@
           <img src="iconos/marmol_texture.png" alt="">
           <object id="LgoFooter" type="image/svg+xml" data="iconos/Drjr.svg"></object>
         </div>
-        <div>
+        <div id="Text_Footer">
           <p>TODOS LOS DERECHOS RESERVADOS<br></p>
-          <p>DR. JUAN MANUEL RIESTRA 2016</p>
+          <a>DR. JUAN MANUEL RIESTRA 2016</a>
         </div>
       </div>
     </div>
